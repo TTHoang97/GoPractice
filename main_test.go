@@ -16,7 +16,7 @@ var a App
 func TestMain(m *testing.M) {
 
 	//Reading environment variables from a .env file and loading them into the app
-	err := godotenv.Load(".env")
+	err := godotenv.Load("database.env")
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
